@@ -1,1 +1,6 @@
-<p>modal works!</p>
+<div class="modal-overlay">
+  <div class="modal-content">
+    <div class="modal-title">{{ config.title }}</div>
+    <ng-content *ngTemplateOutlet="config.templateRef"></ng-content>
+  </div>
+</div>
